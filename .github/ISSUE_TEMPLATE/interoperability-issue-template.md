@@ -1,34 +1,6 @@
 ---
-name: Interoperability issue template
-about: Report an interoperability problem
-title: {{ env.ADJETIVE }}
-labels: ''
-assignees: ''
-
+title: Someone just pushed
+assignees: JasonEtco, matchai
+labels: bug, enhancement
 ---
-
-- **Please, modify the Title accordingly to show the problem**
-
-### Executable's name
-
-- **Publisher**:
-- **Subscriber**:
-
-### Reproducing the problem
-
-- **Test Suite**:
-- **Test Case**:
-- **Link to the GitHub Action workflow run**:
-
-### What is the problem?
-
-- **Publisher expected code**:
-- **Publisher produced code**:
-- **Subscriber expected code**:
-- **Subscriber produced code**:
-
-### Suggestions about why this problem exists
-
--
-
-### Other comments
+Someone just pushed, oh no! Here's who did it: {{ payload.sender.login }}.
