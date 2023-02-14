@@ -31,6 +31,7 @@ jobs:
         with:
           results: ./junit_interoperability_report.xml
       - name: XUnit-viewer-save-failures
+        if: failure(0)
         uses: AutoModality/action-xunit-viewer@v1
         with:
           results: test/failure
@@ -46,4 +47,5 @@ jobs:
         with:
           filename: .github/ISSUE_TEMPLATE/interoperability-issue-template.md
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ADJETIVE: test_failed
