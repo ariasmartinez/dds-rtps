@@ -36,3 +36,11 @@ jobs:
         with:
           name: report
           path: ./index.html
+      - name: Create Issue
+        if: failure()
+        uses: JasonEtco/create-an-issue@v2
+        with:
+          results: test/failure
+          filename: .github/ISSUE_TEMPLATE/interoperability-issue-template.md
+        env:
+          ADJETIVE: test_failed
