@@ -1,7 +1,7 @@
 ---
 name: Interoperability issue template
 about: Report an interoperability problem
-title: {{env.ADJETIVE}}
+title: {{ env.ADJETIVE }}
 labels: ''
 assignees: ''
 
