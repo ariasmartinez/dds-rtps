@@ -146,7 +146,7 @@ def test_reliability_4(child_sub, samples_sent, timeout):
 
 rtps_test_suite_1 = {
     # DATA REPRESENTATION
-    'Test_DataRepresentation_0' : [['-P -t Square -x 1', '-S -t Square -x 1'], [ReturnCode.OK, ReturnCode.OK]],
+    'Test_DataRepresentation_0' : [['-P -x 1', '-S -t Square -x 1'], [ReturnCode.OK, ReturnCode.OK]],
     'Test_DataRepresentation_1' : [['-P -t Square -x 1', '-S -t Square -x 2'], [ReturnCode.INCOMPATIBLE_QOS, ReturnCode.INCOMPATIBLE_QOS]],
     'Test_DataRepresentation_2' : [['-P -t Square -x 2', '-S -t Square -x 1'], [ReturnCode.INCOMPATIBLE_QOS, ReturnCode.INCOMPATIBLE_QOS]],
     'Test_DataRepresentation_3' : [['-P -t Square -x 2', '-S -t Square -x 2'], [ReturnCode.OK, ReturnCode.OK]],
